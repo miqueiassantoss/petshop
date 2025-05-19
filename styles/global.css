@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+
+:root {
+  --font-title: 'Inter Tight', sans-serif;
+  --font-family: 'Inter', sans-serif;
+  --title: 700 2rem/24px var(--font-title);
+  --paragraph-medium: 600 0.875rem/24px var(--font-family);
+  --paragraph-small: 600 0.75rem/16px var(--font-family);
+  --label-large: 700 1rem/24px var(--font-family);
+  --label-medium: 700 0.875/24px var(--font-family);
+  --label-small: 700 0.75rem/16px var(--font-family);
+  --link: 600 0.75rem/16px var(--font-family);
+
+}
+
+

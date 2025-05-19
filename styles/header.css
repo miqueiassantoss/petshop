@@ -1,0 +1,98 @@
+/* Estilizando a logo */
+.header {
+  display: flex;
+  background-color: #2E2C30;
+  width: 153px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 0px 0px 20px;
+}
+
+.header h1 {
+  font: var(--label-large);
+  text-transform: uppercase;
+  color: #9282FA;
+}
+
+
+/* Estilizando o container geral */
+#container {
+  width: 55rem;
+  height: 48rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+
+/* Estilizando o topo do container */
+#schedule {
+  display: flex;
+  justify-content: space-between;
+}
+
+#schedule h2 {
+  font: var(--title);
+  margin-bottom: 8px;
+  color: #FFFFFF;
+}
+
+#schedule span {
+  font: var(--paragraph-medium);
+  color: #98959D;
+}
+
+/* Estilizando o input-date */
+.input-date {
+  width: 172px;
+  height: 50px;
+  background-color: #1E1E1E;
+
+  padding-left: 38px;
+  padding-right: 30px;
+  text-decoration: none;
+
+  color: #98959D;
+  font: var(--label-large);
+  font-weight: 400;
+
+  border: 1px solid #2E2C30;
+  border-radius: 10px;
+
+  transition: border 0.5s ease;
+}
+
+/* Estilizando os icones input-date */
+.input-date-wrapper {
+  position: relative;
+  display: inline-block;
+  display: flex;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.calendar-icon {
+  left: 5px;
+}
+
+.arrow-icon {
+  right: 8px;
+}
+
+
+.input-date::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+
+/*Hover do input-date*/
+.input-date:hover {
+  border: 1px solid #86818C;
+  cursor: pointer;
+}
