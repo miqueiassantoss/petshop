@@ -23,6 +23,7 @@
   height: 48rem;
   margin: 0 auto;
   margin-top: 1rem;
+  position: relative;
 }
 
 
@@ -31,6 +32,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  max-width: 710px;
+  margin-inline: auto;
 }
 
 #schedule h2 {

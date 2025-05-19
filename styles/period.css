@@ -1,9 +1,12 @@
+/* Todos periodos */
 .period {
   cursor: default;
-  background-color: #2E2C30;
+  background-color: #2e2c30;
   border-radius: 12px;
   margin-bottom: 12px;
   padding-block: 4px;
+  max-width: 710px;
+  margin-inline: auto;
 
   hr {
     height: 1px;
@@ -11,10 +14,10 @@
   }
 }
 
-
-
-
-.morning, .afternoon, .night {
+/* Estilizando apenas header dos periodos */
+.morning,
+.afternoon,
+.night {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,59 +25,76 @@
   padding-inline: 20px;
 }
 
-
 .morning > div {
   display: flex;
   align-items: center;
 }
-
+.afternoon > div {
+  display: flex;
+  align-items: center;
+}
+.night > div {
+  display: flex;
+  align-items: center;
+}
 .morning img {
+  vertical-align: middle;
+}
+.afternoon img {
+  vertical-align: middle;
+}
+.night img {
   vertical-align: middle;
 }
 
 
+/* manhã, tarde, noite */
 .period-time {
   font: var(--label-large);
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 8px;
   padding: 4px 8px;
   border-radius: 4px;
 }
 
+
+/* gap-time */
 .gap-time {
   font: var(--label-large);
-  color: #98959D;
+  color: #98959d;
 }
 
-
-
+/* Agendamentos */
 .schedule-information {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-block: 16px 20px;
-  /* height: 88px; */
   padding-inline: 20px;
 }
 
-.dog-name::after {
-  content: " /";
+
+.tutor-name::before {
+  content: "/ ";
 }
 
+/* hora do agendamento */
 .time {
   font: var(--label-medium);
-  color: #FFFFFF;
+  color: #ffffff;
 }
+
 
 .dog-name {
   font: var(--label-small);
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
-.tutor-name, .service-name {
+
+.tutor-name,
+.service-name {
   font: var(--paragraph-small);
-  color: #98959D;
+  color: #98959d;
 }
 
 .remove-schedule {
@@ -83,11 +103,34 @@
 }
 
 .remove-schedule:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .short-hr {
   width: 95%;
   margin: 0 auto;
+}
+
+
+.new-schedule {
+  width: 13rem;
+  height: 3rem;
+  position: absolute;
+
+  font: var(--label-large);
+  color: #050505;
+  text-transform: uppercase;
+
+  background-color: #9382FA;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 2px rgba(147, 130, 250, 0.5);
+
+  right: -200px;
+  bottom: 150px;
+}
+
+.new-schedule:hover {
+  background-color: #BDB4FA;
+  box-shadow: 0 0 8px 2px rgba(123, 94, 252, 0.5);
 }
