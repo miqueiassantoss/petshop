@@ -2,6 +2,9 @@
   cursor: default;
   background-color: #2E2C30;
   border-radius: 12px;
+  margin-bottom: 12px;
+  padding-block: 4px;
+
   hr {
     height: 1px;
     background-color: #353339;
@@ -11,14 +14,12 @@
 
 
 
-.morning {
+.morning, .afternoon, .night {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 48px;
   padding-inline: 20px;
-
-
 }
 
 
@@ -49,9 +50,11 @@
 
 .schedule-information {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 88px;
+  padding-block: 16px 20px;
+  /* height: 88px; */
+  padding-inline: 20px;
 }
 
 .dog-name::after {
@@ -82,4 +85,9 @@
 .remove-schedule:hover {
   color: #FFFFFF;
   text-decoration: underline;
+}
+
+.short-hr {
+  width: 95%;
+  margin: 0 auto;
 }
