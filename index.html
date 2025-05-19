@@ -23,7 +23,8 @@
         <div>
           <h2>Sua agenda</h2>
           <span
-            >Aqui você pode ver todos os clientes e serviços agendado para hoje.</span
+            >Aqui você pode ver todos os clientes e serviços agendado para
+            hoje.</span
           >
         </div>
         <!-- Botão de data -->
@@ -34,17 +35,41 @@
         </div>
       </div>
 
+      <!-- PERIODO DA MANHÃ -->
       <section class="period">
         <div class="morning">
           <div>
-            <img src="assets/morning-icon.svg">
+            <img src="assets/morning-icon.svg" />
             <span class="period-time">Manhã</span>
           </div>
           <span class="gap-time">09h-12h</span>
         </div>
 
-        <hr>
+        <hr />
 
+        <div class="schedule-information">
+          <time datetime="09:00" class="time">09:00</time>
+          <div>
+            <span class="dog-name">Thor</span>
+            <span class="tutor-name">Fernanda Costa</span>
+          </div>
+          <span class="service-name">Vacinação</span>
+          <a class="remove-schedule">Remover agendamento</a>
+        </div>
+      </section>
+
+      <!-- PERIODO DA TARDE -->
+      <section class="period">
+        <div class="afternoon">
+          <div>
+            <img src="assets/afternoon-icon.svg" />
+            <span class="period-time">Tarde</span>
+          </div>
+          <span class="gap-time">13h-18h</span>
+        </div>
+        <hr class="" />
+
+        <!-- Primeiro agendamento -->
         <div class="schedule-information">
           <time datetime="13:00" class="time">13:00</time>
           <div>
@@ -52,7 +77,54 @@
             <span class="tutor-name">João souza</span>
           </div>
           <span class="service-name">Cortes de Unha</span>
-          <span class="remove-schedule">Remover agendamento</span>
+          <a class="remove-schedule">Remover agendamento</a>
+        </div>
+        <hr class="short-hr" />
+
+        <!-- Segundo agendamento -->
+        <div class="schedule-information">
+          <time datetime="14:00" class="time">14:00</time>
+          <div>
+            <span class="dog-name">Bella</span>
+            <span class="tutor-name">Pedro Martins</span>
+          </div>
+          <span class="service-name">Aplicação de Anti-pulgas</span>
+          <a class="remove-schedule">Remover agendamento</a>
+        </div>
+        <hr class="short-hr" />
+
+        <!-- Terceiro agendamento -->
+        <div class="schedule-information">
+          <time datetime="15:00" class="time">15:00</time>
+          <div>
+            <span class="dog-name">Simba</span>
+            <span class="tutor-name">juliana Rocha</span>
+          </div>
+          <span class="service-name">Tosa Higiênica</span>
+          <a class="remove-schedule">Remover agendamento</a>
+        </div>
+      </section>
+
+      <!-- PERIODO DA NOITE -->
+      <section class="period">
+        <div class="night">
+          <div>
+            <img src="assets/night-icon.svg" />
+            <span class="period-time">Noite</span>
+          </div>
+          <span class="gap-time">19h-21h</span>
+        </div>
+        <hr />
+
+        <!-- Primeiro agendamento -->
+        <div class="schedule-information">
+          <time datetime="20:00" class="time">20:00</time>
+          <div>
+            <span class="dog-name">Max</span>
+            <span class="tutor-name">Camila Santos</span>
+          </div>
+          <span class="service-name">Limpeza de Dentes</span>
+          <a class="remove-schedule">Remover agendamento</a>
         </div>
       </section>
     </div>
