@@ -1,0 +1,85 @@
+.period {
+  cursor: default;
+  background-color: #2E2C30;
+  border-radius: 12px;
+  hr {
+    height: 1px;
+    background-color: #353339;
+  }
+}
+
+
+
+
+.morning {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding-inline: 20px;
+
+
+}
+
+
+.morning > div {
+  display: flex;
+  align-items: center;
+}
+
+.morning img {
+  vertical-align: middle;
+}
+
+
+.period-time {
+  font: var(--label-large);
+  color: #FFFFFF;
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.gap-time {
+  font: var(--label-large);
+  color: #98959D;
+}
+
+
+
+.schedule-information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 88px;
+}
+
+.dog-name::after {
+  content: " /";
+}
+
+.time {
+  font: var(--label-medium);
+  color: #FFFFFF;
+}
+
+.dog-name {
+  font: var(--label-small);
+  color: #FFFFFF;
+
+}
+
+.tutor-name, .service-name {
+  font: var(--paragraph-small);
+  color: #98959D;
+}
+
+.remove-schedule {
+  font: var(--paragraph-small);
+  color: #666;
+}
+
+.remove-schedule:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
