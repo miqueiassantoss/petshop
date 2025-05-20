@@ -11,3 +11,24 @@ dateInput.addEventListener("click", () => {
 //
 dateInputField.value = today
 
+
+
+// Fazendo o script pra abrir e fechar o formulário
+const newSchedule = document.querySelector(".new-schedule")
+const container = document.getElementById("container")
+const modal = document.querySelector(".modal-container")
+
+newSchedule.addEventListener("click", () => {
+  container.classList.add("blur")
+  modal.classList.remove("hidden")
+})
+
+
+//Fazendo o script pra fechar o formulário
+const scheduleButton = document.querySelector(".schedule-button")
+
+scheduleButton.addEventListener("click", (event) => {
+  event.preventDefault()
+  container.classList.remove("blur")
+  modal.classList.add("hidden")
+})
