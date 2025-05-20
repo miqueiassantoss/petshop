@@ -129,10 +129,50 @@
       </section>
 
       <button class="new-schedule">novo agendamento</button>
-
     </div>
 
 
+    <div id="modal">
+      <h3>Agende um atendimento</h3>
+      <span>Preencha os dados do cliente para realizar o agendamento</span>
+
+      <form action="">
+
+        <div class="input-wrapper">
+          <label for="input-owner-name">Nome do tutor</label>
+          <img src="assets/user-icon.svg">
+          <input type="text" id="input-owner-name" placeholder="Helena Souza"/>
+        </div>
+        
+        <div class="input-wrapper">
+          <label for="input-pet-name">Nome do pet</label>
+          <img src="assets/pet-paw-icon.svg">
+          <input type="text" id="input-pet-name" placeholder="Fred"/>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="input-tel">Telefone</label>
+          <img src="assets/tel-icon.svg">
+          <input type="text" id="input-tel" placeholder="(00) 0 0000-0000"/>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="input-description">Descrição do serviço</label>
+          <input type="text" id="input-description" placeholder="Banho e Tosa"/>
+        </div>
+
+        <div class="input-wrapper-date">
+          <label for="input-date">Data</label>
+          <img src="assets/calendar.svg">
+          <input type="date" id="input-date" />
+
+          <label for="time">Hora</label>
+          <input type="time" id="time" value="09:00" />
+        </div>
+
+        <button>agendar</button>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
