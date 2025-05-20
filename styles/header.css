@@ -20,7 +20,7 @@
 /* Estilizando o container geral */
 #container {
   width: 55rem;
-  height: 48rem;
+  /* height: 100%; */
   margin: 0 auto;
   margin-top: 1rem;
   position: relative;

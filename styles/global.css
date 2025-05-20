@@ -12,14 +12,24 @@ body {
 :root {
   --font-title: 'Inter Tight', sans-serif;
   --font-family: 'Inter', sans-serif;
-  --title: 700 2rem/24px var(--font-title);
+  --title: 700 1.5rem/32px var(--font-title);
   --paragraph-medium: 600 0.875rem/24px var(--font-family);
   --paragraph-small: 600 0.75rem/16px var(--font-family);
   --label-large: 700 1rem/24px var(--font-family);
   --label-medium: 700 0.875rem/24px var(--font-family);
   --label-small: 700 0.75rem/16px var(--font-family);
   --link: 600 0.75rem/16px var(--font-family);
+  --place-holder: 400 1rem/1.5rem var(--font-family);
 
 }
 
 
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input {
+  color: #98959D;
+  font: var(--place-holder);
+}

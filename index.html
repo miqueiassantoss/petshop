@@ -162,15 +162,24 @@
         </div>
 
         <div class="input-wrapper-date">
-          <label for="input-date">Data</label>
-          <img src="assets/calendar.svg">
-          <input type="date" id="input-date" />
-
-          <label for="time">Hora</label>
-          <input type="time" id="time" value="09:00" />
+          <div class="input-block">
+            <label for="input-date">Data</label>
+            <div class="input-icon-wrapper">
+              <input type="date" id="input-date" />
+              <img src="assets/calendar.svg" class="input-icon" />
+            </div>
+          </div>
+        
+          <div class="input-block">
+            <label for="time">Hora</label>
+            <div class="input-icon-wrapper">
+              <input  type="time" id="input-time" value="09:00" />
+              <img src="assets/clock-icon.svg" class="input-icon" />
+            </div>
+          </div>
         </div>
-
-        <button>agendar</button>
+        
+        <button class="schedule-button">agendar</button>
       </form>
     </div>
     <script src="script.js"></script>
