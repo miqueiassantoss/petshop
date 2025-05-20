@@ -8,6 +8,10 @@ body {
   background-color: #1E1E1E;
 }
 
+.modal-container {
+  position: absolute;
+}
+
 
 :root {
   --font-title: 'Inter Tight', sans-serif;
@@ -32,4 +36,13 @@ input:focus {
 input {
   color: #98959D;
   font: var(--place-holder);
+}
+
+.blur {
+  filter: blur(8px);
+  transition: filter 0.3s ease;
+}
+
+.hidden {
+  display: none;
 }

@@ -18,7 +18,7 @@
       <h1>mundo pet</h1>
     </header>
 
-    <div id="container">
+    <div id="container" class="blur" >
       <div id="schedule">
         <div>
           <h2>Sua agenda</h2>
@@ -131,57 +131,66 @@
       <button class="new-schedule">novo agendamento</button>
     </div>
 
+    <div class="modal-container ">
+      <div id="modal">
+        <h3>Agende um atendimento</h3>
+        <span>Preencha os dados do cliente para realizar o agendamento</span>
 
-    <div id="modal">
-      <h3>Agende um atendimento</h3>
-      <span>Preencha os dados do cliente para realizar o agendamento</span>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="input-owner-name">Nome do tutor</label>
+            <img src="assets/user-icon.svg" />
+            <input
+              type="text"
+              id="input-owner-name"
+              placeholder="Helena Souza"
+            />
+          </div>
 
-      <form action="">
+          <div class="input-wrapper">
+            <label for="input-pet-name">Nome do pet</label>
+            <img src="assets/pet-paw-icon.svg" />
+            <input type="text" id="input-pet-name" placeholder="Fred" />
+          </div>
 
-        <div class="input-wrapper">
-          <label for="input-owner-name">Nome do tutor</label>
-          <img src="assets/user-icon.svg">
-          <input type="text" id="input-owner-name" placeholder="Helena Souza"/>
-        </div>
-        
-        <div class="input-wrapper">
-          <label for="input-pet-name">Nome do pet</label>
-          <img src="assets/pet-paw-icon.svg">
-          <input type="text" id="input-pet-name" placeholder="Fred"/>
-        </div>
+          <div class="input-wrapper">
+            <label for="input-tel">Telefone</label>
+            <img src="assets/tel-icon.svg" />
+            <input type="text" id="input-tel" placeholder="(00) 0 0000-0000" />
+          </div>
 
-        <div class="input-wrapper">
-          <label for="input-tel">Telefone</label>
-          <img src="assets/tel-icon.svg">
-          <input type="text" id="input-tel" placeholder="(00) 0 0000-0000"/>
-        </div>
+          <div class="input-wrapper">
+            <label for="input-description">Descrição do serviço</label>
+            <input
+              type="text"
+              id="input-description"
+              placeholder="Banho e Tosa"
+            />
+          </div>
 
-        <div class="input-wrapper">
-          <label for="input-description">Descrição do serviço</label>
-          <input type="text" id="input-description" placeholder="Banho e Tosa"/>
-        </div>
+          <div class="input-wrapper-date">
+            <div class="input-block">
+              <label for="input-date">Data</label>
+              <div class="input-icon-wrapper">
+                <input type="date" id="input-date" />
+                <img src="assets/calendar.svg" class="input-icon" />
+              </div>
+            </div>
 
-        <div class="input-wrapper-date">
-          <div class="input-block">
-            <label for="input-date">Data</label>
-            <div class="input-icon-wrapper">
-              <input type="date" id="input-date" />
-              <img src="assets/calendar.svg" class="input-icon" />
+            <div class="input-block">
+              <label for="time">Hora</label>
+              <div class="input-icon-wrapper">
+                <input type="time" id="input-time" value="09:00" />
+                <img src="assets/clock-icon.svg" class="input-icon" />
+              </div>
             </div>
           </div>
-        
-          <div class="input-block">
-            <label for="time">Hora</label>
-            <div class="input-icon-wrapper">
-              <input  type="time" id="input-time" value="09:00" />
-              <img src="assets/clock-icon.svg" class="input-icon" />
-            </div>
-          </div>
-        </div>
-        
-        <button class="schedule-button">agendar</button>
-      </form>
+
+          <button class="schedule-button">agendar</button>
+        </form>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
