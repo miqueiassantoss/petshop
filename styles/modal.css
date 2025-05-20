@@ -2,86 +2,68 @@
   width: 30rem;
   height: 44.75rem;
   padding: 40px;
-
   display: flex;
   flex-direction: column;
   margin: 50px auto;
-
   border-radius: 12px;
-
-  background-color: #23242C;
+  background-color: #23242c;
   position: relative;
 }
 
 #modal h3 {
   font: var(--title);
-  color: #FFF;
+  color: #fff;
 }
 
 #modal h3 + span {
   font: var(--paragraph-medium);
-  color: #98959D;
+  color: #98959d;
   margin-bottom: 28px;
 }
 
-
+/* Todos label + input */
 .input-wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
-
 }
 
-
+/* Icone dentro do input */
 .input-wrapper img {
   position: absolute;
   left: 10px;
   top: 40px;
-
-
   width: 20px;
   height: 20px;
-
-
 }
 
-
+/* Estilizando os inputs */
 .input-wrapper input {
-  width: 397px;
-  height: 48px;
-
+  width: 24.81rem;
+  height: 3rem;
   background-color: transparent;
-
-  border: 1px solid #3C3F47;
+  border: 1px solid #3c3f47;
   border-radius: 5px;
-
   padding-left: 35px;
-
   margin-block: 4px 16px;
 }
 
-
 .input-wrapper label {
   font: var(--label-medium);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .input-wrapper input::placeholder {
   font: var(--place-holder);
-  color: #98959D;
+  color: #98959d;
 }
-
 
 #input-description {
   padding-left: 10px;
-  height: 83px;
+  height: 5.18rem;
 }
 
-
-/* Estilizandoa  hora */
-
-
-
+/* Estilizando input de data e hora */
 .input-wrapper-date {
   display: flex;
   gap: 1rem;
@@ -89,10 +71,9 @@
 
 .input-wrapper-date label {
   font: var(--label-medium);
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 4px;
 }
-
 
 .input-block {
   display: flex;
@@ -109,55 +90,70 @@
   height: 20px;
 }
 
-.input-icon-wrapper input {
-  width: 100%;
-  padding-right: 2.5rem; 
-}
-
 .input-icon {
   position: absolute;
   left: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
-  width: 1rem;
-  height: 1rem;
-  opacity: 0.6;
 }
 
-
-#input-date, #input-time {
-  text-decoration: none;
+#input-date,
+#input-time {
   background-color: transparent;
   padding-left: 38px;
-  border: 1px solid #3C3F47;
+  border: 1px solid #3c3f47;
   border-radius: 5px;
-  width: 190px;
-  height: 48px;
+  width: 11.87rem;
+  height: 3rem;
 
   font: var(--place-holder);
-  color: #98959D;
+  color: #98959d;
 }
 
-
-
-#input-time::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
+#input-time::-webkit-calendar-picker-indicator,
 #input-date::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
 
+/* Estilizando os input quando estiverem em foco */
+#input-time:focus,
+#input-date:focus,
+#input-description:focus,
+#input-tel:focus,
+#input-name:focus,
+#input-pet-name:focus,
+#input-owner-name:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #9282fa;
+  color: #fff;
+  font: var(--place-holder);
+}
+
+input:hover {
+  border: 1px solid #86818c;
+}
+
+#input-date:hover,
+#input-time:hover {
+  border: 1px solid #86818c;
+}
+
+#input-date:focus,
+#input-time:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #9282fa;
+  color: #fff;
+  font: var(--place-holder);
+}
 
 /* Estilizando o botão de agendar */
-
 .schedule-button {
-  width: 123px;
-  height: 48px;
-  background-color: #9282FA;
+  width: 7.68rem;
+  height: 3rem;
+  background-color: #9282fa;
   border-radius: 8px;
 
   font: var(--label-large);
@@ -170,23 +166,6 @@
   transition: background-color 0.3s ease;
 }
 
-
 .schedule-button:hover {
-  background-color: #BDB4FA;
-}
-
-#input-time:focus, #input-date:focus, #input-description:focus, #input-tel:focus, #input-name:focus, #input-pet-name:focus, #input-owner-name:focus {
-  outline: none;
-  box-shadow: none;
-  border: 1px solid #9282FA; 
-  color: #FFF;
-  font: var(--place-holder);
-}
-
-input:hover {
-  border: 1px solid #86818C;
-}
-
-#input-date:hover, #input-time:hover {
-  border: 1px solid #86818C;
+  background-color: #bdb4fa;
 }
