@@ -9,5 +9,9 @@ import "../styles/period.css"
 // Importação dayjs
 import "./libs/dayjs.js"
 
-import "../script.js"
+import "./modules/form/form-config.js"
+import "./modules/form/submit.js"
+import "./modules/form/available-hours.js"
+import "./modules/form/load.js"
+import "./modules/schedules/page-load.js"
 

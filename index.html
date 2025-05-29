@@ -135,7 +135,7 @@
         <h3>Agende um atendimento</h3>
         <span>Preencha os dados do cliente para realizar o agendamento</span>
 
-        <form action="">
+        <form action="#">
           <div class="input-wrapper">
             <label for="input-owner-name">Nome do tutor</label>
             <img src="assets/user-icon.svg" />
@@ -171,25 +171,29 @@
             <div class="input-block">
               <label for="input-date">Data</label>
               <div class="input-icon-wrapper">
-                <input type="date" id="input-date" />
+                <input type="date" id="input-date" class="input-date"/>
                 <img src="assets/calendar.svg" class="input-icon" />
               </div>
             </div>
 
-            <div class="input-block">
-              <label for="time">Hora</label>
-              <div class="input-icon-wrapper">
-                <input type="time" id="input-time" value="09:00" />
-                <img src="assets/clock-icon.svg" class="input-icon" />
-              </div>
+
+
+          <div class="input-block">
+            <label for="select-time">Hora</label>
+            <div class="input-icon-wrapper">
+              <select id="select-time" class="input-time">
+                <option value="">Selecione</option>
+                <!-- horários serão inseridos via JS -->
+              </select>
+              <img src="assets/clock-icon.svg" class="input-icon-hour" />
             </div>
           </div>
-
-          <button class="schedule-button">agendar</button>
+          
+          </div>
+          <button type="submit" class="schedule-button">agendar</button>
         </form>
       </div>
     </div>
 
-    <script src="script.js"></script>
   </body>
 </html>

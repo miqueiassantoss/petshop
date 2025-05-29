@@ -48,7 +48,7 @@
 }
 
 /* Estilizando os inputs */
-.input-wrapper input {
+.input-wrapper input{
   width: 24.81rem;
   height: 3rem;
   background-color: transparent;
@@ -56,6 +56,26 @@
   border-radius: 5px;
   padding-left: 35px;
   margin-block: 4px 16px;
+}
+
+/* Estilizando o input de horas */
+  #select-time {
+  position: relative;
+  height: 3rem;
+  width: 190px;
+  background-color: transparent;
+  border: 1px solid #3c3f47;
+  border-radius: 5px;
+  padding-left: 35px;
+  color: #98959d;
+}
+
+.input-icon-hour {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  height: 20px;
+  width: 20px;
 }
 
 .input-wrapper label {
@@ -108,7 +128,7 @@
 }
 
 #input-date,
-#input-time {
+#select-time {
   background-color: transparent;
   padding-left: 38px;
   border: 1px solid #3c3f47;
@@ -120,20 +140,19 @@
   color: #98959d;
 }
 
-#input-time::-webkit-calendar-picker-indicator,
 #input-date::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
 
 /* Estilizando os input quando estiverem em foco */
-#input-time:focus,
 #input-date:focus,
 #input-description:focus,
 #input-tel:focus,
 #input-name:focus,
 #input-pet-name:focus,
-#input-owner-name:focus {
+#input-owner-name:focus
+ {
   outline: none;
   box-shadow: none;
   border: 1px solid #9282fa;
@@ -141,7 +160,17 @@
   font: var(--place-holder);
 }
 
-input:hover {
+#select-time:focus{
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #9282fa;
+  font: var(--place-holder);
+
+}
+
+
+
+input:hover, select:hover {
   border: 1px solid #86818c;
 }
 
@@ -179,5 +208,3 @@ input:hover {
 .schedule-button:hover {
   background-color: #bdb4fa;
 }
-
-
