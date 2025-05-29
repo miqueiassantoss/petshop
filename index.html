@@ -143,19 +143,20 @@
               type="text"
               id="input-owner-name"
               placeholder="Helena Souza"
+              required
             />
           </div>
 
           <div class="input-wrapper">
             <label for="input-pet-name">Nome do pet</label>
             <img src="assets/pet-paw-icon.svg" />
-            <input type="text" id="input-pet-name" placeholder="Fred" />
+            <input type="text" id="input-pet-name" placeholder="Fred" required/>
           </div>
 
           <div class="input-wrapper">
             <label for="input-tel">Telefone</label>
             <img src="assets/tel-icon.svg" />
-            <input type="text" id="input-tel" placeholder="(00) 0 0000-0000" />
+            <input type="text" id="input-tel" required placeholder="(00) 0 0000-0000" />
           </div>
 
           <div class="input-wrapper">
@@ -164,6 +165,7 @@
               type="text"
               id="input-description"
               placeholder="Banho e Tosa"
+              required
             />
           </div>
 
@@ -171,7 +173,7 @@
             <div class="input-block">
               <label for="input-date">Data</label>
               <div class="input-icon-wrapper">
-                <input type="date" id="input-date" class="input-date"/>
+                <input type="date" id="input-date" class="input-date" required/>
                 <img src="assets/calendar.svg" class="input-icon" />
               </div>
             </div>
@@ -181,7 +183,7 @@
           <div class="input-block">
             <label for="select-time">Hora</label>
             <div class="input-icon-wrapper">
-              <select id="select-time" class="input-time">
+              <select id="select-time" class="input-time" required>
                 <option value="">Selecione</option>
                 <!-- horários serão inseridos via JS -->
               </select>
