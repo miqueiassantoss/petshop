@@ -1,7 +1,9 @@
 const form = document.querySelector("form")
 const modal = document.querySelector(".modal-container")
 
-form.onsubmit = (event) => {
+import { newSchedule } from "../../services/new-schedule.js"
+
+form.onsubmit = async (event) => {
   event.preventDefault()
   console.log("enviado")
   container.classList.remove("blur")
@@ -27,6 +29,16 @@ form.onsubmit = (event) => {
       tutorName,
       petName,
       telephone,
+      description,
+      date,
+      time,
+      id,
+    })
+
+    await newSchedule({
+      id, 
+      tutorName, 
+      petName,
       description,
       date,
       time,

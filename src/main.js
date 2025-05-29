@@ -15,3 +15,6 @@ import "./modules/form/available-hours.js"
 import "./modules/form/load.js"
 import "./modules/schedules/page-load.js"
 
+//Services
+import "./services/api-config.js"
+import "./services/new-schedule.js"
