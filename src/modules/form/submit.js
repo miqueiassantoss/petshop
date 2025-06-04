@@ -4,7 +4,6 @@ const modal = document.querySelector(".modal-container")
 import { newSchedule } from "../../services/new-schedule.js"
 
 form.onsubmit = async (event) => {
-  event.preventDefault()
   console.log("enviado")
   container.classList.remove("blur")
   modal.classList.add("hidden")
@@ -25,16 +24,7 @@ form.onsubmit = async (event) => {
     const time = document.getElementById("select-time").value
     const id = new Date().getTime()
 
-    console.log({
-      tutorName,
-      petName,
-      telephone,
-      description,
-      date,
-      time,
-      id,
-    })
-
+    //Enviando os dados para o banco de dados
     await newSchedule({
       id, 
       tutorName, 

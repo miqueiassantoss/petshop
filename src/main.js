@@ -18,3 +18,5 @@ import "./modules/schedules/page-load.js"
 //Services
 import "./services/api-config.js"
 import "./services/new-schedule.js"
+import "./services/schedules-fetch-byday.js"
+import "./services/renderSchedules.js"

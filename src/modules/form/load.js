@@ -1,5 +1,5 @@
 import { hoursLoad } from "../form/available-hours.js"
-
+ 
 // Seleciona o input de date
 const selectedDate = document.getElementById("input-date")
 
@@ -17,6 +17,5 @@ selectedDate.addEventListener("change", () => {
   const select = document.getElementById("select-time")
   select.innerHTML = ""
 
-  // Renderiza as horas disponíveis para o dia selecionado
   schedulesDay() 
 })

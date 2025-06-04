@@ -29,101 +29,87 @@
         <!-- Botão de data -->
         <div class="input-date-wrapper">
           <img class="calendar-icon icon" src="assets/calendar.svg" />
-          <input class="input-date" type="date" />
+          <input id="search-date" class="input-date" type="date" />
           <img class="arrow-icon icon" src="assets/arrow-down.svg" />
         </div>
       </div>
 
       <!-- PERIODO DA MANHÃ -->
-      <section class="period">
-        <div class="morning">
+      <section class="period-section">
+        <div class="header-period">
           <div>
             <img src="assets/morning-icon.svg" />
             <span class="period-time">Manhã</span>
           </div>
           <span class="gap-time">09h-12h</span>
         </div>
+        <!-- <hr /> -->
 
-        <hr />
+        <div class="schedule-information morning">
+          <!-- <div class="item">
+            <span class="time">09:00</span>
+            <div>
+              <span class="dog-name">Thor</span>
+              <span class="tutor-name">Fernanda Costa</span>
+            </div>
 
-        <div class="schedule-information">
-          <time datetime="09:00" class="time">09:00</time>
-          <div>
-            <span class="dog-name">Thor</span>
-            <span class="tutor-name">Fernanda Costa</span>
-          </div>
-          <span class="service-name">Vacinação</span>
-          <a class="remove-schedule">Remover agendamento</a>
+            <span class="service-name">Vacinação</span>
+            <a class="remove-schedule">Remover agendamento</a>
+          </div> -->
         </div>
+
       </section>
 
       <!-- PERIODO DA TARDE -->
-      <section class="period">
-        <div class="afternoon">
+      <section class="period-section">
+        <div class="header-period">
           <div>
             <img src="assets/afternoon-icon.svg" />
             <span class="period-time">Tarde</span>
           </div>
           <span class="gap-time">13h-18h</span>
         </div>
-        <hr class="" />
+        <!-- <hr> -->
 
         <!-- Primeiro agendamento -->
-        <div class="schedule-information">
-          <time datetime="13:00" class="time">13:00</time>
-          <div>
-            <span class="dog-name">Mel</span>
-            <span class="tutor-name">João souza</span>
-          </div>
-          <span class="service-name">Cortes de Unha</span>
-          <a class="remove-schedule">Remover agendamento</a>
+        <div class="schedule-information afternoon">
+          <!-- <div class="item">
+            <time datetime="13:00" class="time">13:00</time>
+            <div>
+              <span class="dog-name">Mel</span>
+              <span class="tutor-name">João souza</span>
+            </div>
+            <span class="service-name">Cortes de Unha</span>
+            <a class="remove-schedule">Remover agendamento</a>
+          </div> -->
         </div>
-        <hr class="short-hr" />
+        <!-- <hr class="short-hr" /> -->
 
-        <!-- Segundo agendamento -->
-        <div class="schedule-information">
-          <time datetime="14:00" class="time">14:00</time>
-          <div>
-            <span class="dog-name">Bella</span>
-            <span class="tutor-name">Pedro Martins</span>
-          </div>
-          <span class="service-name">Aplicação de Anti-pulgas</span>
-          <a class="remove-schedule">Remover agendamento</a>
-        </div>
-        <hr class="short-hr" />
 
-        <!-- Terceiro agendamento -->
-        <div class="schedule-information">
-          <time datetime="15:00" class="time">15:00</time>
-          <div>
-            <span class="dog-name">Simba</span>
-            <span class="tutor-name">juliana Rocha</span>
-          </div>
-          <span class="service-name">Tosa Higiênica</span>
-          <a class="remove-schedule">Remover agendamento</a>
-        </div>
       </section>
 
       <!-- PERIODO DA NOITE -->
-      <section class="period">
-        <div class="night">
+      <section class="period-section">
+        <div class="header-period">
           <div>
             <img src="assets/night-icon.svg" />
             <span class="period-time">Noite</span>
           </div>
           <span class="gap-time">19h-21h</span>
         </div>
-        <hr />
+        <!-- <hr/> -->
 
         <!-- Primeiro agendamento -->
-        <div class="schedule-information">
-          <time datetime="20:00" class="time">20:00</time>
-          <div>
-            <span class="dog-name">Max</span>
-            <span class="tutor-name">Camila Santos</span>
-          </div>
-          <span class="service-name">Limpeza de Dentes</span>
-          <a class="remove-schedule">Remover agendamento</a>
+        <div class="schedule-information night">
+          <!-- <div class="item">
+            <time datetime="20:00" class="time">20:00</time>
+            <div>
+              <span class="dog-name">Max</span>
+              <span class="tutor-name">Camila Santos</span>
+            </div>
+            <span class="service-name">Limpeza de Dentes</span>
+            <a class="remove-schedule">Remover agendamento</a>
+          </div> -->
         </div>
       </section>
 
@@ -150,13 +136,23 @@
           <div class="input-wrapper">
             <label for="input-pet-name">Nome do pet</label>
             <img src="assets/pet-paw-icon.svg" />
-            <input type="text" id="input-pet-name" placeholder="Fred" required/>
+            <input
+              type="text"
+              id="input-pet-name"
+              placeholder="Fred"
+              required
+            />
           </div>
 
           <div class="input-wrapper">
             <label for="input-tel">Telefone</label>
             <img src="assets/tel-icon.svg" />
-            <input type="text" id="input-tel" required placeholder="(00) 0 0000-0000" />
+            <input
+              type="text"
+              id="input-tel"
+              required
+              placeholder="(00) 0 0000-0000"
+            />
           </div>
 
           <div class="input-wrapper">
@@ -173,29 +169,30 @@
             <div class="input-block">
               <label for="input-date">Data</label>
               <div class="input-icon-wrapper">
-                <input type="date" id="input-date" class="input-date" required/>
+                <input
+                  type="date"
+                  id="input-date"
+                  class="input-date"
+                  required
+                />
                 <img src="assets/calendar.svg" class="input-icon" />
               </div>
             </div>
 
-
-
-          <div class="input-block">
-            <label for="select-time">Hora</label>
-            <div class="input-icon-wrapper">
-              <select id="select-time" class="input-time" required>
-                <option value="">Selecione</option>
-                <!-- horários serão inseridos via JS -->
-              </select>
-              <img src="assets/clock-icon.svg" class="input-icon-hour" />
+            <div class="input-block">
+              <label for="select-time">Hora</label>
+              <div class="input-icon-wrapper">
+                <select id="select-time" class="input-time" required>
+                  <option value="">Selecione</option>
+                  <!-- horários serão inseridos via JS -->
+                </select>
+                <img src="assets/clock-icon.svg" class="input-icon-hour" />
+              </div>
             </div>
-          </div>
-          
           </div>
           <button type="submit" class="schedule-button">agendar</button>
         </form>
       </div>
     </div>
-
   </body>
 </html>

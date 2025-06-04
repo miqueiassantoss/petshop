@@ -1,5 +1,5 @@
 /* Todos periodos */
-.period {
+.period-section {
   cursor: default;
   background-color: #2e2c30;
   border-radius: 12px;
@@ -15,9 +15,7 @@
 }
 
 /* Estilizando apenas header dos periodos */
-.morning,
-.afternoon,
-.night {
+.header-period {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,27 +23,15 @@
   padding-inline: 20px;
 }
 
-.morning > div {
+.header-period > div {
   display: flex;
   align-items: center;
 }
-.afternoon > div {
-  display: flex;
-  align-items: center;
-}
-.night > div {
-  display: flex;
-  align-items: center;
-}
-.morning img {
+
+.header-period img {
   vertical-align: middle;
 }
-.afternoon img {
-  vertical-align: middle;
-}
-.night img {
-  vertical-align: middle;
-}
+
 
 
 /* manhã, tarde, noite */
@@ -65,7 +51,7 @@
 }
 
 /* Agendamentos */
-.schedule-information {
+.item {
   display: flex;
   justify-content: space-between;
   align-items: center;
