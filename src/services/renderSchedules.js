@@ -37,8 +37,9 @@ export async function renderSchedules(date) {
     tutorName.classList.add("tutor-name")
     description.classList.add("service-name")
     remove.classList.add("remove-schedule")
-    hr.classList.add("short-hr")
     remove.textContent = "Remover agendamento"
+    remove.dataset.id = schedule.id
+    hr.classList.add("short-hr")
 
     //Renderizando eles na tela
     wrapper.append(dogName, tutorName)
@@ -54,5 +55,7 @@ export async function renderSchedules(date) {
       periodNight.appendChild(hr)
       periodNight.appendChild(item)
     }
+
+
   }
 }

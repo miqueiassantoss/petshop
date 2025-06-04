@@ -9,14 +9,17 @@ import "../styles/period.css"
 // Importação dayjs
 import "./libs/dayjs.js"
 
+//Web
 import "./modules/form/form-config.js"
 import "./modules/form/submit.js"
 import "./modules/form/available-hours.js"
 import "./modules/form/load.js"
 import "./modules/schedules/page-load.js"
+import "./modules/form/remove.schedule.js"
 
 //Services
 import "./services/api-config.js"
 import "./services/new-schedule.js"
 import "./services/schedules-fetch-byday.js"
 import "./services/renderSchedules.js"
+import "./services/cancel-schedule.js"
