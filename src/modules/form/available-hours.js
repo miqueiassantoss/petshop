@@ -1,4 +1,5 @@
 import dayjs from "dayjs"
+import { getUnavailableHours } from "../../services/unavailable-hours.js"
 
 const availableHours = [
   "09:00",
@@ -12,23 +13,31 @@ const availableHours = [
   "17:00",
   "18:00",
   "19:00",
-  "20:00"
+  "20:00",
 ]
 
-export function hoursLoad({ date }) {
+export async function hoursLoad({ date }) {
   const select = document.getElementById("select-time")
+  const unavailableHours = await getUnavailableHours()
+  select.innerHTML = ""
 
   const opening = availableHours.map((hour) => {
     // Recupera somente a hora.
     const [scheduleHour] = hour.split(":")
 
     // Adiciona a hora na data e verifica se está no passado.
-    const isHourPast = dayjs(date).add(Number(scheduleHour), "hour").isAfter(dayjs())
+    const isHourPast = dayjs(date)
+      .add(Number(scheduleHour), "hour")
+      .isAfter(dayjs())
+
+    const isAlreadySchedule = unavailableHours.includes(
+      dayjs(date).add(Number(scheduleHour), "hour").format("DD/MM/YYYY HH:mm")
+    )
 
     //Define se o horário está disponível
     return {
       hour,
-      available: isHourPast,
+      available: isHourPast && !isAlreadySchedule,
     }
   })
 
