@@ -1,11 +1,19 @@
-import {apiConfig} from "./api-config.js"
+import { apiConfig } from "./api-config.js"
 
-export async function newSchedule({id, tutorName, petName, telephone, description, date, time}) {
+export async function newSchedule({
+  id,
+  tutorName,
+  petName,
+  telephone,
+  description,
+  date,
+  time,
+}) {
   try {
-    await fetch(`${apiConfig.baseURL}/schedules`,{
+    await fetch(`${apiConfig.baseURL}/schedules`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         id,
@@ -13,13 +21,11 @@ export async function newSchedule({id, tutorName, petName, telephone, descriptio
         petName,
         telephone,
         description,
-        date, 
+        date,
         time,
-      })
+      }),
     })
     alert("Agendamento  realizado")
-    
-
   } catch (error) {
     console.log(error)
     alert("Não foi possível agendar.")
